@@ -1,10 +1,12 @@
 {
   "expo": {
-    "name": "AIppetizer App",
-    "slug": "aippetizer-app",
+    "jsEngine": "hermes",
+    "newArchEnabled": true,
+    "name": "Issue reproduce",
+    "slug": "issue-reproduce",
     "version": "1.0.0",
     "orientation": "portrait",
-    "scheme": "com.aippetizer",
+    "scheme": "com.issue-reproduce",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -14,16 +16,16 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ilir.aippetizer",
-      "googleServicesFile": "./GoogleService-Info.plist"
+      "bundleIdentifier": "com.ilir.issuereproduce",
+
+      "jsEngine": "jsc"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.ilir.aippetizer",
-      "googleServicesFile": "./google-services.json"
+      "package": "com.ilir.issuereproduce"
     },
     "web": {
       "bundler": "metro",
@@ -31,13 +33,6 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      [
-        "expo-router",
-        {
-          "origin": "https://ilir.xyz"
-          // "origin": "http://localhost:3000"
-        }
-      ],
       [
         "expo-build-properties",
         {
@@ -54,15 +49,17 @@
         {
           "photosPermission": "The app accesses your photos to let you share them with your friends."
         }
-      ]
+      ],
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.301906284132-fag2hme5059rk9bgqka6naogl0efa1s1"
+        }
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
-    },
-    "extra": {
-      "eas": {
-        "projectId": "00bf97f5-8e7d-4ad6-b185-273025b35710"
-      }
     }
   }
 }
