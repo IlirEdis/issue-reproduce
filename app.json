@@ -43,20 +43,7 @@
             "usesCleartextTraffic": true
           }
         }
-      ],
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "The app accesses your photos to let you share them with your friends."
-        }
-      ],
-      [
-        "@react-native-google-signin/google-signin",
-        {
-          "iosUrlScheme": "com.googleusercontent.apps.301906284132-fag2hme5059rk9bgqka6naogl0efa1s1"
-        }
-      ],
-      "expo-font"
+      ]
     ],
     "experiments": {
       "typedRoutes": true
