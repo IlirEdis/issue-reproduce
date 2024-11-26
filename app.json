@@ -1,6 +1,5 @@
 {
   "expo": {
-    "jsEngine": "hermes",
     "newArchEnabled": true,
     "name": "Issue reproduce",
     "slug": "issue-reproduce",
@@ -16,9 +15,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ilir.issuereproduce",
-
-      "jsEngine": "jsc"
+      "bundleIdentifier": "com.ilir.issuereproduce"
     },
     "android": {
       "adaptiveIcon": {
@@ -47,6 +44,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b55bc761-1c9f-46fb-b1ca-95a4c4cd1f43"
+      }
     }
   }
 }
